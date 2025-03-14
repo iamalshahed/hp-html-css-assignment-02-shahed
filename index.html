@@ -3,9 +3,288 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- 
+    -- link favicon image -->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <title>Hotel Booking</title>
+    <!-- 
+    -- link custom css file -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./mobile-view.css">
+    <link rel="stylesheet" href="./tablet-view.css">
+
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <!-- 
+    -- font awesome cdn 
+    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
+
+    <!-- 
+    -- Hero section start 
+    -->
+    <section class="hero-container">
+        <div class="hero mxw" data-aos="fade-up">
+            <nav>
+                <ul id="navmenu">
+                    <li><a class="active-link" href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                    <li>
+                        <a href="/">
+                            <img class="nav-logo" src="./images/logo-black.png" alt="Logo">
+                        </a>
+                    </li>
+                    <li><a href="#">Rooms</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li class="initial"><i id="closenav" class="fa-solid fa-xmark"></i></li>
+                </ul>
+            </nav>
+
+            <div class="mobile">
+                <i id="menubar" class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="hero_text mxw">
+            <h1>Discover Extraordinary <br> Comfort in Hotels</h1>
+        </div>
+
+        <div class="slider">
+            <span></span>
+            <span class="active-slider"></span>
+            <span></span>
+        </div>
+    </section>
+    <!-- 
+    -- Hero section end 
+    -->
+
+
+    <!-- 
+    -- book a room section start
+    -->
+    <section class="book_room mxw" data-aos="fade-up">
+        <div class="br_title">
+            <h2>Book a Room</h2>
+            <p>Discover the perfect space for you!</p>
+        </div>
+
+        <div class="booking">
+            <div class="booking_box">
+                <strong>Date</strong>
+                <div class="get_booking">
+                    <img src="./images/date.png" alt="Date">
+                    <span>Check Available</span>
+                </div>
+            </div>
+
+            <div class="booking_box">
+                <strong>Person</strong>
+                <div class="get_booking gb_two">
+                    <div class="select_bokking adults">
+                        <div class="icon">
+                            <img src="./images/person.png" alt="Person">
+                            <span>Adults</span>
+                        </div>
+                        <div class="quantity">
+                            <span>2</span>
+                            <img src="./images/arrow-down.png" alt="Arrow Down">
+                        </div>
+                    </div>
+
+                    <div class="select_bokking childreen">
+                        <div class="icon">
+                            <img  class="child" src="./images/children.png" alt="Children">
+                            <span>Children</span>
+                        </div>
+                        <div class="quantity">
+                            <span>0</span>
+                            <img src="./images/arrow-down.png" alt="Arrow Down">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="book_now_btn">
+                <button>BOOK NOW</button>
+            </div>
+        </div>
+    </section>
+    <!-- 
+    -- book a room section end
+    -->
+
+
+    <!-- 
+    -- facilities section start
+    -->
+    <section class="facilities" data-aos="fade-up">
+        <div class="f_img_grids mxw">
+            <div class="img_rel">
+                <img class="bigimg" src="./images/facility/g1.png" alt="Facility">
+                <span>Rooms</span>
+            </div>
+            <div class="img_rel">
+                <img src="./images/facility/g2.png" alt="Facility">
+                <span>Dining</span>
+            </div>
+            <div class="img_rel">
+                <img src="./images/facility/g3.png" alt="Facility">
+                <span>Conferences & Meetings</span>
+            </div>
+            <div class="img_rel">
+                <img src="./images/facility/g4.png" alt="Facility">
+                <span>Service & Facilities</span>
+            </div>
+            <div class="img_rel">
+                <img src="./images/facility/g5.png" alt="Facility">
+                <span>Wedding Package</span>
+            </div>
+        </div>
+    </section>
+    <!-- 
+    -- facilities section end
+    -->
+
+
+    <!-- 
+    -- offer section start
+    -->
+    <section class="offer mxw" data-aos="fade-up">
+        <div class="offer_head">
+            <span>Special Offers</span>
+            <div class="flex">
+                <h3>Best offer of the month</h3>
+                <a href="#" class="offer_view">View all</a>
+            </div>
+            <p>Experience Fantastic Benefits and Obtain Better Rates When You Make a Direct Booking on Our Official Website</p>
+        </div>
+
+        <div class="offer_grid">
+            <div class="single_card">
+                <div class="image_wrapper"><img src="./images/offer/o1.png" alt="Offer"></div>
+                <span class="category">Room</span>
+                <div class="card_flex">
+                    <h4>Honeymoon</h4>
+                    <div class="user">
+                        <img src="./images/person.png" alt="Person">
+                        <span>2</span>
+                    </div>
+                </div>
+                <p>Indulge in a Memorable One-Time Romantic Dinner for Two</p>
+                <div class="pricing">
+                    <strong>$699 <span>/night</span></strong>
+                </div>
+            </div>
+
+            <div class="single_card">
+                <div class="image_wrapper"><img src="./images/offer/o2.png" alt="Offer"></div>
+                <span class="category">Room</span>
+                <div class="card_flex">
+                    <h4>Meetings</h4>
+                    <div class="user">
+                        <img src="./images/person.png" alt="Person">
+                        <span>30</span>
+                    </div>
+                </div>
+                <p>Experience an Exclusively Private Environment to Boost Your Productivity</p>
+                <div class="pricing">
+                    <strong>$999 <span>/night</span></strong>
+                </div>
+            </div>
+
+            <div class="single_card">
+                <div class="image_wrapper"><img src="./images/offer/o3.png" alt="Offer"></div>
+                <span class="category">Dining</span>
+                <div class="card_flex">
+                    <h4>Romantic Dining</h4>
+                    <div class="user">
+                        <img src="./images/person.png" alt="Person">
+                        <span>2</span>
+                    </div>
+                </div>
+                <p>Indulge in a Memorable One-Time Romantic Dinner for Two</p>
+                <div class="pricing">
+                    <strong>$499 <span>/table</span></strong>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 
+    -- offer section end
+    -->
+
+    <!-- 
+    -- footer section start
+    -->
+    <footer>
+        <div class="footer_content mxw">
+            <div class="foot_flex">
+                <div class="newsletter" data-aos="fade-up">
+                    <h5>Newsletter & Special Promo</h5>
+                    <form class="subscribe">
+                        <input type="text" placeholder="Enter your email here" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+                <div class="footer_links">
+                    <div class="footer_logo" data-aos="fade-up">
+                        <img src="./images/logo-white.png" alt="Logo">
+                    </div>
+                    <div class="links_flex" data-aos="fade-up">
+                        <div class="links">
+                            <ul>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Location</a></li>
+                            </ul>
+                        </div>
+                        <div class="links">
+                            <ul>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Term of Use</a></li>
+                                <li><a href="#">Privacy Police</a></li>
+                            </ul>
+                        </div>
+                        <div class="links">
+                            <ul>
+                                <li><a href="#">Services & Facilities</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">How to book</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copywrite">
+                <hr class="cp_write_line">
+                <span>© Copyright Booking Hotels. All right reserved.</span>
+            </div>
+        </div>
+    </footer>
+    <!-- 
+    -- footer section end
+    -->
+
+
+    <!-- 
+    -- link custom js file 
+    -->
+    <script src="./app.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        duration: 1000,
+      });
+    </script>
     
 </body>
 </html>
